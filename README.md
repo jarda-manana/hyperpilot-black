@@ -1,9 +1,10 @@
-# Hyperpilot 2.0
+# Hyperpilot-black
 Mapsforge/VTM rendering theme for pilots.
+optimized black theme
 
 Best suited for [OpenAndroMaps](https://www.openandromaps.org/en/downloads/countrys-and-regions) offline maps and [XCTrack](https://xctrack.org/), but can be used with any software supporting VTM themes.
 
-License: MIT
+Based on [Hyperpilot 2.0](https://github.com/hyperknot/hyperpilot)
 
-For the old version, based on VTM's default theme, look at the [1.0 branch](https://github.com/hyperknot/hyperpilot/tree/1.0).
+License: MIT
 
