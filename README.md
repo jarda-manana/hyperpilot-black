@@ -1,3 +1,5 @@
+clone of https://github.com/vitekf/hyperpilot-black (github doesn't allow more than one fork of project)
+
 # Hyperpilot-black
 Mapsforge/VTM rendering theme for pilots.
 
