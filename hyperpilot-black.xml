@@ -87,10 +87,10 @@
     <!-- airports -->
     <m k="aeroway" zoom-min="10">
         <area fill="#720591"/>
-        <line stroke="#720591" width="20"/>
+        <line stroke="#720591" width="10"/>
         <m v="aerodrome">
-            <caption dy="18" fill="#ff9ee9" k="name" priority="3" size="16" stroke="#000000" stroke-width="2" style="bold"/>
-            <caption dy="-18" fill="#ff9ee9" k="ref" priority="3" size="16" stroke="#000000" stroke-width="2" style="bold"/>
+            <caption dy="18" fill="#ff9ee9" k="name" priority="3" size="16" stroke="#000000" stroke-width="1" style="bold"/>
+            <caption dy="-18" fill="#ff9ee9" k="ref" priority="3" size="16" stroke="#000000" stroke-width="1" style="bold"/>
             <symbol src="symbols_hyperpilot/airport2.svg"/>
         </m>
     </m>
@@ -98,7 +98,7 @@
     <!-- lakes -->
     <m closed="yes" e="way" k="natural" v="water">
         <area fill="#05356b"/>
-        <caption area-size="0.4" fill="#70a1ff" k="name" size="16" stroke="#000000" stroke-width="2" style="bold"/>
+        <caption area-size="0.4" fill="#70a1ff" k="name" size="16" stroke="#000000" stroke-width="1" style="bold"/>
     </m>
     <m closed="yes" e="way" k="landuse" v="reservoir|basin">
         <area fill="#05356b"/>
@@ -107,61 +107,61 @@
 
     <!-- rivers -->
     <m e="way" k="waterway" v="ditch" zoom-min="13">
-        <line stroke="#05356b" stroke-width="2.4"/>
+        <line stroke="#05356b" stroke-width="1.2"/>
     </m>
     <m e="way" k="waterway" v="drain" zoom-min="13">
-        <line stroke="#05356b" stroke-width="2"/>
+        <line stroke="#05356b" stroke-width="1"/>
     </m>
     <m e="way" k="waterway" v="canal" zoom-min="10">
-        <line stroke="#05356b" stroke-width="3.6"/>
+        <line stroke="#05356b" stroke-width="1.8"/>
     </m>
     <m e="way" k="waterway" v="stream" zoom-min="13">
-        <line stroke="#05356b" stroke-width="2.4"/>
+        <line stroke="#05356b" stroke-width="1.2"/>
     </m>
     <m e="way" k="waterway" v="river" zoom-min="8">
-        <line stroke="#05356b" stroke-width="4.4"/>
+        <line stroke="#05356b" stroke-width="2.2"/>
     </m>
     <m closed="yes" e="way" k="waterway" v="riverbank">
         <area fill="#05356b"/>
     </m>
     <m closed="no" e="way" k="waterway" v="riverbank">
-        <line stroke="#05356b" stroke-width="4"/>
+        <line stroke="#05356b" stroke-width="2"/>
     </m>
     <m closed="no" e="way" k="natural" v="water">
-        <line stroke="#05356b" stroke-width="4"/>
+        <line stroke="#05356b" stroke-width="2"/>
     </m>
     <m closed="no" e="way" k="landuse" v="reservoir|basin">
-        <line stroke="#05356b" stroke-width="0.8"/>
+        <line stroke="#05356b" stroke-width="0.4"/>
     </m>
 
 
     <!-- roads and paths -->
-    <style-text id="road" k="ref" priority="2" size="16" fill="#aaaaaa" stroke="#000000" stroke-width="4"/>
-    <style-text id="major-road" k="ref" priority="1" size="16" fill="#aaaaaa" stroke="#000000" stroke-width="4" style="bold"/>
+    <style-text id="road" k="ref" priority="2" size="16" fill="#aaaaaa" stroke="#000000" stroke-width="2"/>
+    <style-text id="major-road" k="ref" priority="1" size="16" fill="#aaaaaa" stroke="#000000" stroke-width="2" style="bold"/>
 
     <m e="way" k="tunnel" v="~|no">
         <m k="area" v="~">
-            <outline-layer id="4" stroke="#555555" width="4" cap="butt"/>
-            <outline-layer id="3" stroke="#555555" width="3" cap="butt"/>
-            <outline-layer id="2" stroke="#555555" width="2" cap="butt"/>
-            <outline-layer id="1" stroke="#555555" width="1" cap="butt"/>
-            <outline-layer id="1l" stroke="#555555" width="1" cap="butt"/>
+            <outline-layer id="4" stroke="#555555" width="2" cap="butt"/>
+            <outline-layer id="3" stroke="#555555" width="1.5" cap="butt"/>
+            <outline-layer id="2" stroke="#555555" width="1" cap="butt"/>
+            <outline-layer id="1" stroke="#555555" width="0.5" cap="butt"/>
+            <outline-layer id="1l" stroke="#555555" width="0.5" cap="butt"/>
 
             <m k="highway" select="first">
                 <!-- highway -->
                 <m v="motorway|trunk">
-                    <line stroke="#7c2706" width="5" outline="2" cap="butt"/>
+                    <line stroke="#7c2706" width="2.5" outline="2" cap="butt"/>
                     <m k="network|hknetwork" v="~" zoom-min="12">
                         <text use="major-road"/>
                     </m>
                 </m>
                 <m v="motorway_link|trunk_link">
-                    <line stroke="#7c2706" width="3" outline="2" cap="butt"/>
+                    <line stroke="#7c2706" width="1.5" outline="2" cap="butt"/>
                 </m>
 
                 <!-- primary -->
                 <m v="primary|primary_link">
-                    <line stroke="#915808" width="4" outline="2" cap="butt"/>
+                    <line stroke="#915808" width="2" outline="2" cap="butt"/>
                     <m k="network|hknetwork" v="~" zoom-min="12">
                         <text use="major-road"/>
                     </m>
@@ -169,7 +169,7 @@
 
                 <!-- secondary -->
                 <m v="secondary|secondary_link" zoom-min="10">
-                    <line stroke="#846a03" width="4" outline="1" cap="butt"/>
+                    <line stroke="#846a03" width="2" outline="1" cap="butt"/>
                     <m k="network|hknetwork" v="~" zoom-min="13">
                         <text use="road"/>
                     </m>
@@ -177,23 +177,23 @@
 
                 <!-- tertiary -->
                 <m v="tertiary|tertiary_link" zoom-min="11">
-                    <line stroke="#7f7a03" width="3" outline="1l" cap="butt"/>
+                    <line stroke="#7f7a03" width="1.5" outline="1l" cap="butt"/>
                     <m k="network|hknetwork" v="~" zoom-min="13">
                         <text use="road"/>
                     </m>
                 </m>
                 <m v="unclassified" zoom-min="13">
-                    <line stroke="#333333" width="3" outline="1l" cap="butt"/>
+                    <line stroke="#333333" width="1.5" outline="1l" cap="butt"/>
                 </m>
 
                 <!-- smallest for vehicles -->
                 <m v="living_street|residential|service|services" zoom-min="13">
-                    <line stroke="#333333" width="2" outline="1l" cap="butt"/>
+                    <line stroke="#333333" width="1" outline="1l" cap="butt"/>
                 </m>
 
                 <!-- paths -->
                 <m zoom-min="15">
-                    <line stroke="#6d4001" width="1"/>
+                    <line stroke="#6d4001" width="0.5"/>
                 </m>
             </m>
         </m>
@@ -203,18 +203,18 @@
     <m e="way" k="admin_level" v="2">
         <!--<line stroke="#000000" stroke-width="8" fix="true"/>-->
         <!--<line stroke="#ffcc00" stroke-width="6" fix="true"/>-->
-        <line fix="true" stipple="100" stipple-stroke="#ffd93f" stroke="#921f1f" width="3"/>
+        <line fix="true" stipple="100" stipple-stroke="#ffd93f" stroke="#921f1f" width="1.5"/>
     </m>
 
     <!-- railway -->
     <m k="railway" zoom-min="12">
         <m v="station|halt" zoom-min="13">
             <symbol src="symbols_hyperpilot/dot_train.svg" symbol-percent="150"/>
-            <caption priority="3" dy="20" fill="#c00044" k="name" size="16" stroke="#aaaaaa" stroke-width="4" style="bold"/>
+            <caption priority="3" dy="20" fill="#c00044" k="name" size="16" stroke="#aaaaaa" stroke-width="2" style="bold"/>
         </m>
         <m k="tunnel" v="~|false|no">
             <m v="rail|light_rail">
-                <line fix="true" stipple="30" stipple-stroke="#666666" stroke="#222222" width="4"/>
+                <line fix="true" stipple="30" stipple-stroke="#666666" stroke="#222222" width="2"/>
             </m>
         </m>
     </m>
@@ -231,7 +231,7 @@
 
     <!-- ferries -->
     <m k="route" v="ferry" zoom-min="11">
-        <line dasharray="15,10" fix="true" stroke="#707070" width="4"/>
+        <line dasharray="15,10" fix="true" stroke="#707070" width="2"/>
     </m>
 
 
@@ -245,10 +245,10 @@
 
     <!-- power lines -->
     <m e="way" k="power" v="line">
-        <line dasharray="20,10" fix="true" stroke="#bf34ba" width="4"/>
+        <line dasharray="20,10" fix="true" stroke="#bf34ba" width="2"/>
     </m>
     <m e="way" k="power" v="minor_line">
-        <line dasharray="5,5" fix="true" stroke="#bf34ba" width="3"/>
+        <line dasharray="5,5" fix="true" stroke="#bf34ba" width="1.5"/>
     </m>
 
     <!-- wind turbines -->
@@ -259,7 +259,7 @@
     <!-- cable cars -->
     <!-- TODO softer blue -->
     <m e="way" k="aerialway">
-        <line dasharray="20,10" fix="true" stroke="#3e4bc5" width="3"/>
+        <line dasharray="20,10" fix="true" stroke="#3e4bc5" width="1.5"/>
     </m>
 
     <!-- alpine huts -->
@@ -300,34 +300,34 @@
     <!-- city labels -->
     <m k="place">
         <m v="island" zoom-min="13">
-            <caption fill="#aaaaaa" k="name" priority="5" size="14" stroke="#000000" stroke-width="2" style="bold"/>
+            <caption fill="#aaaaaa" k="name" priority="5" size="14" stroke="#000000" stroke-width="1" style="bold"/>
         </m>
         <m v="locality" zoom-min="14">
-            <caption fill="#aaaaaa" k="name" priority="5" size="14" stroke="#000000" stroke-width="2" style="bold"/>
+            <caption fill="#aaaaaa" k="name" priority="5" size="14" stroke="#000000" stroke-width="1" style="bold"/>
         </m>
         <m v="isolated_dwelling" zoom-min="14">
-            <caption fill="#aaaaaa" k="name" priority="5" size="14" stroke="#000000" stroke-width="2" style="bold"/>
+            <caption fill="#aaaaaa" k="name" priority="5" size="14" stroke="#000000" stroke-width="1" style="bold"/>
         </m>
         <m v="hamlet" zoom-min="14">
-            <caption fill="#aaaaaa" k="name" priority="5" size="14" stroke="#000000" stroke-width="2" style="bold"/>
+            <caption fill="#aaaaaa" k="name" priority="5" size="14" stroke="#000000" stroke-width="1" style="bold"/>
         </m>
         <m v="neighbourhood" zoom-min="14">
-            <caption fill="#aaaaaa" k="name" priority="5" size="14" stroke="#000000" stroke-width="2" style="bold"/>
+            <caption fill="#aaaaaa" k="name" priority="5" size="14" stroke="#000000" stroke-width="1" style="bold"/>
         </m>
         <m v="suburb">
-            <caption fill="#aaaaaa" k="name" priority="4" size="14" stroke="#000000" stroke-width="2" style="bold"/>
+            <caption fill="#aaaaaa" k="name" priority="4" size="14" stroke="#000000" stroke-width="1" style="bold"/>
         </m>
         <m v="village">
-            <caption fill="#aaaaaa" k="name" priority="3" size="17" stroke="#000000" stroke-width="2" style="bold"/>
+            <caption fill="#aaaaaa" k="name" priority="3" size="17" stroke="#000000" stroke-width="1" style="bold"/>
         </m>
         <m v="town">
-            <caption fill="#aaaaaa" k="name" priority="2" size="18" stroke="#000000" stroke-width="2" style="bold"/>
+            <caption fill="#aaaaaa" k="name" priority="2" size="18" stroke="#000000" stroke-width="1" style="bold"/>
         </m>
         <m v="city">
-            <caption fill="#aaaaaa" k="name" priority="1" size="19" stroke="#000000" stroke-width="2" style="bold"/>
+            <caption fill="#aaaaaa" k="name" priority="1" size="19" stroke="#000000" stroke-width="1" style="bold"/>
         </m>
         <m v="country">
-            <caption fill="#aaaaaa" k="name" priority="0" size="20" stroke="#000000" stroke-width="2" style="bold"/>
+            <caption fill="#aaaaaa" k="name" priority="0" size="20" stroke="#000000" stroke-width="1" style="bold"/>
         </m>
     </m>
 
